@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JotaGeTe</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilopag.css">
+</head>
+<body>
+    <header>
+        <div class="logo">JotaGeTe RECORDS</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="envios.html">Envianos Tu Demo</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <main class="contenedorEnvios">
+        <form class="formularioEnvios" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+            <h2>Envianos Tu Demo</h2>
+            <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Tu Nombre" id="nombre">
+                <!-- <br> -->
+            <label for="email">Email</label>
+                <input type="email" placeholder="ejemplo@email.com" id="email">
+                
+            <div><label for="fileUpload">Selecciona Tu Demo</label>
+                <input type="file" id="fileUpload"></div> 
+            <p>Al Presionar Enviar Acepta Los Terminos</p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar Todo">
+        </form>
+    </main>
+    <footer>
+        <h3 class="textoFooter">seguinos en nuestras redes sociales</h3>
+        <ul>
+            <li>facebook</li>
+            <li>instagram</li>
+            <li>twitter</li>
+            <li>sound cloud</li>
+        </ul>
+    </footer>
+</body>
+</html>

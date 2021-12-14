@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0pt;
+    padding: 0pt;
+}
+
+
+
+/* *{
+    border: solid 1px rgb(255, 255, 255);
+} */
+
+/* -------------navegador---------------- */
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(28, 30, 37);
+    position: fixed;
+}
+
+
+
+
+.logo{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    /* text-align: center;
+    line-height: 80px; */
+    float: left;
+    width: 30%;
+    height: 80px;
+    font-family: 'Shippori Antique', sans-serif;
+    /* line-height: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav ul{
+    width: 70%;
+    height: 80px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+ul a:hover{
+    color: #aceeff;
+}
+
+nav li{
+    /* display: inline-block; */
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 12px; 
+    /* margin-top: 50px; */
+    margin-right: 20px;
+}
+
+/* ---------------------main----------------------------- */
+
+main{
+    padding-top: 80px;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(185, 185, 185);
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    /* border: solid 1px rgb(255, 255, 255); */
+    font-family: 'Shippori Antique', sans-serif;
+    
+}
+
+/* h3{
+    color: white;
+} */
+
+.videosInicio{
+    display: flex;
+    min-height: 800px;
+    height: auto;
+    background-color: rgb(45, 44, 53);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.videosMain{
+    height: 315px;
+    width: 560px;
+    max-width: 100%;
+}
+
+
+/* --------------------------secciones----------------------- */
+
+.section{
+    min-height: 800px;
+    height: auto;
+    width: 100%;
+    background-color: rgb(45, 44, 53);
+}    
+
+    
+/* -----------------------------seccion 1---------------------------- */
+#section1{
+    background-image: url(img/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    display: grid;
+    grid-template-areas: 
+    "video texto"
+    "video boton"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80% 20%;
+}
+
+.contenedorVideo{
+    display: grid;
+    grid-area: video;
+    align-content: center;
+    justify-content: center;
+}
+
+.videos1{
+    height: 315px;
+    width: 560px;
+    max-width: 100%;
+}
+
+.cajaTexto{
+    display: flex;
+    grid-area: texto;
+    align-items: center;
+    justify-items: center;
+}
+
+.texto{
+    display: flex;
+    height: auto;
+    width: 100%;
+    color: white;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+.cajaBoton{
+    display: grid;
+    grid-area: boton;
+    align-content: center;
+    justify-content: right;
+    
+
+}
+
+.boton{
+    height: 100px;
+    width: 300px;
+    background-color: rgba(250, 74, 74, 0.356);
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Shippori Antique', sans-serif;
+    text-align: center;
+    line-height: 100px;
+}
+
+.boton:hover{
+    color: rgb(199, 194, 194);
+    background-color: rgb(255, 0, 0);
+    
+}
+
+
+
+/* ----------------------------seccion 2---------------------------- */
+
+#section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorImagenes{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.fotosEquipos{
+    max-height: 300px;
+    width: 500px;
+    /* min-width: 100%; */
+    max-width: 100%;
+    margin: 20px;
+}
+
+/* -----------------------------------seccion 3----------------------------- */
+
+#section3{
+    background-image: url(img/foto2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    display: grid;
+    grid-template-areas: 
+    "video texto"
+    "video boton"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80% 20%;
+}
+
+
+
+/* -------------------footer---------------------------- */
+
+footer{
+    background-color: rgb(28, 30, 37);
+    height: 100px;
+    font-family: 'Shippori Antique', sans-serif;
+    display: flex;
+    align-items: center;
+    
+}
+
+.textoFooter{
+    height: 100px;
+    width: 20%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+footer ul{
+    height: 100px;
+    width: 80%;
+    text-align: center;
+    /* word-spacing: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer li{
+    color: white;
+    list-style-type: none;
+    font-size: 12px;
+    
+}
+
+/* section{
+    border: 10px solid;
+    height: 200px;
+    color: burlywood;
+    background-color: cadetblue;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    border-color: burlywood;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255) ;
+}
+
+nav li:hover{
+    color: darkblue;
+}
+
+nav li:active{
+    background-color: darkgoldenrod;
+}
+
+.section{
+    height: 450px;
+    width: 100%;
+    background-color: darkgray;
+    border: 2pxsolid black;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+} */
+
+/* 
+centar objetos en cuadrados horizontal y vertical
+uso del line height  
+tamano del video
+ajutar letra en objeto
+es necesario crear contenedores
+contenedor que se agrande con el contenido
+pero con un minimo
+ */
+
+/* ---------------------------- contacto --------------------------- */
+
+
+.contenedorFormulario{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-blend-mode: overlay; */
+    align-content: center;
+    justify-content: center;
+}
+
+.formulario{
+    height: 700px;
+    max-width: 500px;
+    background-color: rgba(45, 44, 53, 0.712);
+    color: white;
+    font-family: 'Shippori Antique', sans-serif;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* --------------------envios--------------------------------- */
+
+.contenedorEnvios{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-blend-mode: overlay; */
+    align-content: center;
+    justify-content: center;
+}
+
+.formularioEnvios{
+    height: 300px;
+    max-width: 500px;
+    background-color: rgba(45, 44, 53, 0.712);
+    color: white;
+    font-family: 'Shippori Antique', sans-serif;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* ------------------productos--------------------- */
+.productos{
+    display: grid;
+    min-height: 800px;
+    height: auto;
+    width: 100%;
+    background-image: url(img/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    /* align-content: flex-start; */
+    grid-template-areas: 
+    "texto enlaces"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.sectionProductos{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-color: rgb(45, 44, 53);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+}    
+
+
+.descripcion{
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.cajaDetalleProductos{
+    height: 100%;
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(45, 44, 53, 0.712);
+    grid-template: texto;
+    
+}
+
+.detalleProductos{
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    font-family: 'Shippori Antique', sans-serif;
+    margin-left: 20px;
+}
+
+.descripcionProductos{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Shippori Antique', sans-serif;
+    margin-left: 20px;
+}
+
+.contenedorEnlaces{
+    display: grid;
+    height: 100%;
+    /* width: 50%; */
+    grid-template: enlaces;
+    align-content: space-evenly;
+    justify-content: right;
+}
+
+.textoEnlace{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Shippori Antique', sans-serif;
+    /* padding: 20px; */
+    margin-right: 20px;
+    
+    
+}
+
+.botonEnlaces{
+    background-color: rgba(250, 74, 74, 0.356);
+    /* padding: 20px; */
+    text-align: center;
+}
+
+.botonEnlaces:hover{
+    color: rgb(199, 194, 194);
+    background-color: rgb(255, 0, 0);
+    
+}
+
+.fotoProducto{
+    max-height: 500px;
+    max-width: 900px;
+    width: 100%;
+    
+    
+}
+
+.textoProductos{
+    color: white;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+/* -----------------precios--------------------------- */
+
+.precios{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-blend-mode: overlay; */
+    align-content: space-evenly;
+    justify-content: center;
+}
+
+/* .precios li{
+    list-style: none;
+    color: white;
+    font-size: 50px;
+    font-family: 'Shippori Antique', sans-serif;
+    background-color: rgba(36, 36, 36, 0.479);
+} */
+
+.contenedorPrecios{
+    display: grid;
+    height: 100%;
+    /* width: 50%; */
+    align-content: space-evenly;
+    justify-content: right;
+}
+
+.textoPrecios{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Shippori Antique', sans-serif;
+    /* padding: 20px; */
+    margin: 20px;
+    
+    
+}
+
+.botonPrecios{
+    background-color: rgba(45, 44, 53, 0.712);
+    /* padding: 20px; */
+    text-align: center;
+}
+
+.botonPrecios:hover{
+    color: rgb(199, 194, 194);
+    background-color: rgb(255, 0, 0);
+    
+}
+
+/* -------------------media 0px - 320px------------------- */
+
+@media only screen and (max-width:320px) {
+    .logo{
+        font-size: 5px;
+    }
+    
+    #section1{
+        display: grid;
+    grid-template-areas: 
+    "video"
+    "texto"
+    "boton"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr 0.2fr;
+    }
+
+    #section3{
+        display: grid;
+    grid-template-areas: 
+    "video"
+    "texto"
+    "boton"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr 0.2fr;
+    }
+
+    .texto{
+        font-size: 30px;
+    }
+
+    .textoProductos{
+        font-size: 30px;
+    }
+    
+    .productos{
+        display: grid;
+        grid-template-areas: 
+        "texto"
+        "enlaces"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    .detalleProductos{
+        font-size: 2.5rem;
+    }
+
+}
+
+/* -------------------media 321px - 720px------------------- */
+
+@media only screen and (min-width:321px) and (max-width:720px) {
+    .logo{
+        font-size: 15px;
+    }
+    
+    #section1{
+        display: grid;
+    grid-template-areas: 
+    "video"
+    "texto"
+    "boton"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr 0.2fr;
+    }
+
+    #section3{
+        display: grid;
+    grid-template-areas: 
+    "video"
+    "texto"
+    "boton"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr 0.2fr;
+    }
+
+    .texto{
+        font-size: 40px;
+    }
+
+    .textoProductos{
+        font-size: 40px;
+    }
+    
+    .productos{
+        display: grid;
+        grid-template-areas: 
+        "texto"
+        "enlaces"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    .detalleProductos{
+        font-size: 2.8rem;
+    }
+
+}
+
+/* -------------------media 721px - 1280px------------------- */
+
+@media only screen and (min-width:721px) and (max-width:1280px) {
+    .logo{
+        font-size: 20px;
+    }
+
+    #section1{
+        display: grid;
+    grid-template-areas: 
+    "video"
+    "texto"
+    "boton"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr 0.2fr;
+    }
+
+    #section3{
+        display: grid;
+    grid-template-areas: 
+    "video"
+    "texto"
+    "boton"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr 0.2fr;
+    }
+
+    .texto{
+        font-size: 80px;
+    }
+
+    .textoProductos{
+        font-size: 80px;
+    }
+    
+    .productos{
+        display: grid;
+        grid-template-areas: 
+        "texto"
+        "enlaces"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    .detalleProductos{
+        font-size: 3rem;
+    }
+
+}
+
+
+/* -------------------media 1280px------------------- */
+
+@media only screen and (min-width:1281px) {
+    
+    .texto{
+        font-size: 90px;
+    }
+
+    .textoProductos{
+        font-size: 90px;
+    }
+    
+    .detalleProductos{
+        font-size: 3.2rem;
+    }
+
+}
